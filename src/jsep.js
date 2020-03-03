@@ -112,6 +112,7 @@
 					(ch >= 65 && ch <= 90) || // A...Z
 					(ch >= 97 && ch <= 122) || // a...z
 					(ch >= 48 && ch <= 57) || // 0...9
+					ch === PERIOD_CODE || // no support for nested objects
                     (ch >= 128 && !binary_ops[String.fromCharCode(ch)]); // any non-ASCII that is not an operator
 		},
 
